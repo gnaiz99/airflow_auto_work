@@ -1,0 +1,295 @@
+[2025-02-25T16:10:14.785+0000] {processor.py:186} INFO - Started process (PID=201) to work on /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:10:14.787+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/my_first_dags.py for tasks to queue
+[2025-02-25T16:10:14.791+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:10:14.790+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:10:14.834+0000] {processor.py:925} INFO - DAG(s) 'my_first_dag_1' retrieved from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:10:15.030+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:10:15.029+0000] {override.py:1912} INFO - Created Permission View: can delete on DAG:my_first_dag_1
+[2025-02-25T16:10:15.049+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:10:15.048+0000] {override.py:1912} INFO - Created Permission View: can edit on DAG:my_first_dag_1
+[2025-02-25T16:10:15.061+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:10:15.061+0000] {override.py:1912} INFO - Created Permission View: can read on DAG:my_first_dag_1
+[2025-02-25T16:10:15.073+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:10:15.073+0000] {override.py:1912} INFO - Created Permission View: can delete on DAG Run:my_first_dag_1
+[2025-02-25T16:10:15.085+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:10:15.084+0000] {override.py:1912} INFO - Created Permission View: menu access on DAG Run:my_first_dag_1
+[2025-02-25T16:10:15.097+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:10:15.097+0000] {override.py:1912} INFO - Created Permission View: can create on DAG Run:my_first_dag_1
+[2025-02-25T16:10:15.111+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:10:15.110+0000] {override.py:1912} INFO - Created Permission View: can read on DAG Run:my_first_dag_1
+[2025-02-25T16:10:15.112+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:10:15.111+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T16:10:15.132+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:10:15.132+0000] {dag.py:3262} INFO - Creating ORM DAG for my_first_dag_1
+[2025-02-25T16:10:15.153+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:10:15.152+0000] {dag.py:4180} INFO - Setting next_dagrun for my_first_dag_1 to 2025-02-01 00:00:00+00:00, run_after=2025-02-02 00:00:00+00:00
+[2025-02-25T16:10:15.188+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/my_first_dags.py took 0.414 seconds
+[2025-02-25T16:10:45.815+0000] {processor.py:186} INFO - Started process (PID=234) to work on /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:10:45.816+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/my_first_dags.py for tasks to queue
+[2025-02-25T16:10:45.819+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:10:45.818+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:10:45.837+0000] {processor.py:925} INFO - DAG(s) 'my_first_dag_1' retrieved from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:10:45.861+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:10:45.861+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T16:10:45.881+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:10:45.881+0000] {dag.py:4180} INFO - Setting next_dagrun for my_first_dag_1 to 2025-02-01 00:00:00+00:00, run_after=2025-02-02 00:00:00+00:00
+[2025-02-25T16:10:45.911+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/my_first_dags.py took 0.101 seconds
+[2025-02-25T16:11:16.536+0000] {processor.py:186} INFO - Started process (PID=261) to work on /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:11:16.537+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/my_first_dags.py for tasks to queue
+[2025-02-25T16:11:16.540+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:11:16.539+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:11:16.566+0000] {processor.py:925} INFO - DAG(s) 'my_first_dag_1' retrieved from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:11:16.591+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:11:16.591+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T16:11:16.614+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:11:16.613+0000] {dag.py:4180} INFO - Setting next_dagrun for my_first_dag_1 to 2025-02-01 00:00:00+00:00, run_after=2025-02-02 00:00:00+00:00
+[2025-02-25T16:11:16.648+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/my_first_dags.py took 0.117 seconds
+[2025-02-25T16:11:47.308+0000] {processor.py:186} INFO - Started process (PID=288) to work on /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:11:47.309+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/my_first_dags.py for tasks to queue
+[2025-02-25T16:11:47.311+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:11:47.311+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:11:47.336+0000] {processor.py:925} INFO - DAG(s) 'my_first_dag_1' retrieved from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:11:47.362+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:11:47.362+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T16:11:47.383+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:11:47.382+0000] {dag.py:4180} INFO - Setting next_dagrun for my_first_dag_1 to 2025-02-01 00:00:00+00:00, run_after=2025-02-02 00:00:00+00:00
+[2025-02-25T16:11:47.413+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/my_first_dags.py took 0.111 seconds
+[2025-02-25T16:12:17.483+0000] {processor.py:186} INFO - Started process (PID=313) to work on /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:12:17.484+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/my_first_dags.py for tasks to queue
+[2025-02-25T16:12:17.486+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:12:17.486+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:12:17.500+0000] {processor.py:925} INFO - DAG(s) 'my_first_dag_1' retrieved from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:12:17.524+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:12:17.523+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T16:12:17.546+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:12:17.545+0000] {dag.py:4180} INFO - Setting next_dagrun for my_first_dag_1 to 2025-02-01 00:00:00+00:00, run_after=2025-02-02 00:00:00+00:00
+[2025-02-25T16:12:17.562+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/my_first_dags.py took 0.083 seconds
+[2025-02-25T16:12:47.714+0000] {processor.py:186} INFO - Started process (PID=340) to work on /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:12:47.715+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/my_first_dags.py for tasks to queue
+[2025-02-25T16:12:47.717+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:12:47.717+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:12:47.733+0000] {processor.py:925} INFO - DAG(s) 'my_first_dag_1' retrieved from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:12:47.758+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:12:47.758+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T16:12:47.779+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:12:47.779+0000] {dag.py:4180} INFO - Setting next_dagrun for my_first_dag_1 to 2025-02-01 00:00:00+00:00, run_after=2025-02-02 00:00:00+00:00
+[2025-02-25T16:12:47.802+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/my_first_dags.py took 0.093 seconds
+[2025-02-25T16:13:18.041+0000] {processor.py:186} INFO - Started process (PID=369) to work on /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:13:18.042+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/my_first_dags.py for tasks to queue
+[2025-02-25T16:13:18.044+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:13:18.044+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:13:18.065+0000] {processor.py:925} INFO - DAG(s) 'my_first_dag_1' retrieved from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:13:18.091+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:13:18.090+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T16:13:18.113+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:13:18.113+0000] {dag.py:4180} INFO - Setting next_dagrun for my_first_dag_1 to 2025-02-01 00:00:00+00:00, run_after=2025-02-02 00:00:00+00:00
+[2025-02-25T16:13:18.157+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/my_first_dags.py took 0.122 seconds
+[2025-02-25T16:13:48.232+0000] {processor.py:186} INFO - Started process (PID=395) to work on /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:13:48.234+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/my_first_dags.py for tasks to queue
+[2025-02-25T16:13:48.236+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:13:48.236+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:13:48.262+0000] {processor.py:925} INFO - DAG(s) 'my_first_dag_1' retrieved from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:13:48.286+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:13:48.286+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T16:13:48.307+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:13:48.306+0000] {dag.py:4180} INFO - Setting next_dagrun for my_first_dag_1 to 2025-02-01 00:00:00+00:00, run_after=2025-02-02 00:00:00+00:00
+[2025-02-25T16:13:48.335+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/my_first_dags.py took 0.108 seconds
+[2025-02-25T16:14:18.471+0000] {processor.py:186} INFO - Started process (PID=422) to work on /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:14:18.472+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/my_first_dags.py for tasks to queue
+[2025-02-25T16:14:18.474+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:14:18.474+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:14:18.492+0000] {processor.py:925} INFO - DAG(s) 'my_first_dag_1' retrieved from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:14:18.517+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:14:18.517+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T16:14:18.537+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:14:18.537+0000] {dag.py:4180} INFO - Setting next_dagrun for my_first_dag_1 to 2025-02-01 00:00:00+00:00, run_after=2025-02-02 00:00:00+00:00
+[2025-02-25T16:14:18.555+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/my_first_dags.py took 0.090 seconds
+[2025-02-25T16:14:48.702+0000] {processor.py:186} INFO - Started process (PID=449) to work on /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:14:48.703+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/my_first_dags.py for tasks to queue
+[2025-02-25T16:14:48.705+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:14:48.705+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:14:48.722+0000] {processor.py:925} INFO - DAG(s) 'my_first_dag_1' retrieved from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:14:48.746+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:14:48.746+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T16:14:48.770+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:14:48.769+0000] {dag.py:4180} INFO - Setting next_dagrun for my_first_dag_1 to 2025-02-01 00:00:00+00:00, run_after=2025-02-02 00:00:00+00:00
+[2025-02-25T16:14:48.790+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/my_first_dags.py took 0.093 seconds
+[2025-02-25T16:15:19.021+0000] {processor.py:186} INFO - Started process (PID=478) to work on /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:15:19.022+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/my_first_dags.py for tasks to queue
+[2025-02-25T16:15:19.024+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:15:19.024+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:15:19.046+0000] {processor.py:925} INFO - DAG(s) 'my_first_dag_1' retrieved from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:15:19.072+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:15:19.072+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T16:15:19.093+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:15:19.093+0000] {dag.py:4180} INFO - Setting next_dagrun for my_first_dag_1 to 2025-02-01 00:00:00+00:00, run_after=2025-02-02 00:00:00+00:00
+[2025-02-25T16:15:19.111+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/my_first_dags.py took 0.096 seconds
+[2025-02-25T16:15:49.220+0000] {processor.py:186} INFO - Started process (PID=503) to work on /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:15:49.221+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/my_first_dags.py for tasks to queue
+[2025-02-25T16:15:49.224+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:15:49.223+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:15:49.248+0000] {processor.py:925} INFO - DAG(s) 'my_first_dag_1' retrieved from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:15:49.274+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:15:49.274+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T16:15:49.294+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:15:49.294+0000] {dag.py:4180} INFO - Setting next_dagrun for my_first_dag_1 to 2025-02-01 00:00:00+00:00, run_after=2025-02-02 00:00:00+00:00
+[2025-02-25T16:15:49.334+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/my_first_dags.py took 0.119 seconds
+[2025-02-25T16:16:19.443+0000] {processor.py:186} INFO - Started process (PID=532) to work on /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:16:19.445+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/my_first_dags.py for tasks to queue
+[2025-02-25T16:16:19.447+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:16:19.447+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:16:19.478+0000] {processor.py:925} INFO - DAG(s) 'my_first_dag_1' retrieved from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:16:19.504+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:16:19.504+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T16:16:19.524+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:16:19.524+0000] {dag.py:4180} INFO - Setting next_dagrun for my_first_dag_1 to 2025-02-01 00:00:00+00:00, run_after=2025-02-02 00:00:00+00:00
+[2025-02-25T16:16:19.558+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/my_first_dags.py took 0.120 seconds
+[2025-02-25T16:16:50.245+0000] {processor.py:186} INFO - Started process (PID=559) to work on /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:16:50.246+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/my_first_dags.py for tasks to queue
+[2025-02-25T16:16:50.248+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:16:50.248+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:16:50.271+0000] {processor.py:925} INFO - DAG(s) 'my_first_dag_1' retrieved from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:16:50.296+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:16:50.296+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T16:16:50.317+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:16:50.317+0000] {dag.py:4180} INFO - Setting next_dagrun for my_first_dag_1 to 2025-02-01 00:00:00+00:00, run_after=2025-02-02 00:00:00+00:00
+[2025-02-25T16:16:50.354+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/my_first_dags.py took 0.117 seconds
+[2025-02-25T16:17:20.486+0000] {processor.py:186} INFO - Started process (PID=586) to work on /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:17:20.487+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/my_first_dags.py for tasks to queue
+[2025-02-25T16:17:20.490+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:17:20.489+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:17:20.529+0000] {processor.py:925} INFO - DAG(s) 'my_first_dag_1' retrieved from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:17:20.555+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:17:20.554+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T16:17:20.575+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:17:20.575+0000] {dag.py:4180} INFO - Setting next_dagrun for my_first_dag_1 to 2025-02-01 00:00:00+00:00, run_after=2025-02-02 00:00:00+00:00
+[2025-02-25T16:17:20.595+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/my_first_dags.py took 0.115 seconds
+[2025-02-25T16:17:50.662+0000] {processor.py:186} INFO - Started process (PID=613) to work on /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:17:50.663+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/my_first_dags.py for tasks to queue
+[2025-02-25T16:17:50.665+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:17:50.665+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:17:50.693+0000] {processor.py:925} INFO - DAG(s) 'my_first_dag_1' retrieved from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:17:50.719+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:17:50.719+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T16:17:50.741+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:17:50.740+0000] {dag.py:4180} INFO - Setting next_dagrun for my_first_dag_1 to 2025-02-01 00:00:00+00:00, run_after=2025-02-02 00:00:00+00:00
+[2025-02-25T16:17:50.773+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/my_first_dags.py took 0.117 seconds
+[2025-02-25T16:18:20.841+0000] {processor.py:186} INFO - Started process (PID=640) to work on /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:18:20.842+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/my_first_dags.py for tasks to queue
+[2025-02-25T16:18:20.844+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:18:20.844+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:18:20.860+0000] {processor.py:925} INFO - DAG(s) 'my_first_dag_1' retrieved from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:18:20.884+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:18:20.884+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T16:18:20.905+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:18:20.904+0000] {dag.py:4180} INFO - Setting next_dagrun for my_first_dag_1 to 2025-02-01 00:00:00+00:00, run_after=2025-02-02 00:00:00+00:00
+[2025-02-25T16:18:20.924+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/my_first_dags.py took 0.089 seconds
+[2025-02-25T16:18:51.144+0000] {processor.py:186} INFO - Started process (PID=667) to work on /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:18:51.146+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/my_first_dags.py for tasks to queue
+[2025-02-25T16:18:51.149+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:18:51.149+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:18:51.204+0000] {processor.py:925} INFO - DAG(s) 'my_first_dag_1' retrieved from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:18:51.231+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:18:51.230+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T16:18:51.251+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:18:51.251+0000] {dag.py:4180} INFO - Setting next_dagrun for my_first_dag_1 to 2025-02-01 00:00:00+00:00, run_after=2025-02-02 00:00:00+00:00
+[2025-02-25T16:18:51.281+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/my_first_dags.py took 0.147 seconds
+[2025-02-25T16:19:21.938+0000] {processor.py:186} INFO - Started process (PID=694) to work on /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:19:21.939+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/my_first_dags.py for tasks to queue
+[2025-02-25T16:19:21.941+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:19:21.941+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:19:21.968+0000] {processor.py:925} INFO - DAG(s) 'my_first_dag_1' retrieved from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:19:21.994+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:19:21.994+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T16:19:22.016+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:19:22.016+0000] {dag.py:4180} INFO - Setting next_dagrun for my_first_dag_1 to 2025-02-01 00:00:00+00:00, run_after=2025-02-02 00:00:00+00:00
+[2025-02-25T16:19:22.044+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/my_first_dags.py took 0.113 seconds
+[2025-02-25T16:19:52.639+0000] {processor.py:186} INFO - Started process (PID=721) to work on /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:19:52.640+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/my_first_dags.py for tasks to queue
+[2025-02-25T16:19:52.643+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:19:52.642+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:19:52.664+0000] {processor.py:925} INFO - DAG(s) 'my_first_dag_1' retrieved from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:19:52.688+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:19:52.688+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T16:19:52.709+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:19:52.708+0000] {dag.py:4180} INFO - Setting next_dagrun for my_first_dag_1 to 2025-02-01 00:00:00+00:00, run_after=2025-02-02 00:00:00+00:00
+[2025-02-25T16:19:52.740+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/my_first_dags.py took 0.106 seconds
+[2025-02-25T16:20:22.882+0000] {processor.py:186} INFO - Started process (PID=748) to work on /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:20:22.883+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/my_first_dags.py for tasks to queue
+[2025-02-25T16:20:22.885+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:20:22.885+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:20:22.905+0000] {processor.py:925} INFO - DAG(s) 'my_first_dag_1' retrieved from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:20:22.927+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:20:22.927+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T16:20:22.953+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:20:22.953+0000] {dag.py:4180} INFO - Setting next_dagrun for my_first_dag_1 to 2025-02-01 00:00:00+00:00, run_after=2025-02-02 00:00:00+00:00
+[2025-02-25T16:20:22.989+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/my_first_dags.py took 0.113 seconds
+[2025-02-25T16:20:53.060+0000] {processor.py:186} INFO - Started process (PID=775) to work on /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:20:53.061+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/my_first_dags.py for tasks to queue
+[2025-02-25T16:20:53.063+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:20:53.063+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:20:53.080+0000] {processor.py:925} INFO - DAG(s) 'my_first_dag_1' retrieved from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:20:53.106+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:20:53.106+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T16:20:53.125+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:20:53.125+0000] {dag.py:4180} INFO - Setting next_dagrun for my_first_dag_1 to 2025-02-01 00:00:00+00:00, run_after=2025-02-02 00:00:00+00:00
+[2025-02-25T16:20:53.149+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/my_first_dags.py took 0.094 seconds
+[2025-02-25T16:21:23.350+0000] {processor.py:186} INFO - Started process (PID=802) to work on /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:21:23.351+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/my_first_dags.py for tasks to queue
+[2025-02-25T16:21:23.353+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:21:23.353+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:21:23.373+0000] {processor.py:925} INFO - DAG(s) 'my_first_dag_1' retrieved from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:21:23.396+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:21:23.396+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T16:21:23.416+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:21:23.416+0000] {dag.py:4180} INFO - Setting next_dagrun for my_first_dag_1 to 2025-02-01 00:00:00+00:00, run_after=2025-02-02 00:00:00+00:00
+[2025-02-25T16:21:23.443+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/my_first_dags.py took 0.098 seconds
+[2025-02-25T16:21:53.574+0000] {processor.py:186} INFO - Started process (PID=829) to work on /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:21:53.575+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/my_first_dags.py for tasks to queue
+[2025-02-25T16:21:53.577+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:21:53.577+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:21:53.607+0000] {processor.py:925} INFO - DAG(s) 'my_first_dag_1' retrieved from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:21:53.634+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:21:53.634+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T16:21:53.659+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:21:53.658+0000] {dag.py:4180} INFO - Setting next_dagrun for my_first_dag_1 to 2025-02-01 00:00:00+00:00, run_after=2025-02-02 00:00:00+00:00
+[2025-02-25T16:21:53.691+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/my_first_dags.py took 0.122 seconds
+[2025-02-25T16:22:24.372+0000] {processor.py:186} INFO - Started process (PID=856) to work on /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:22:24.373+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/my_first_dags.py for tasks to queue
+[2025-02-25T16:22:24.379+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:22:24.376+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:22:24.405+0000] {processor.py:925} INFO - DAG(s) 'my_first_dag_1' retrieved from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:22:24.431+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:22:24.431+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T16:22:24.451+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:22:24.451+0000] {dag.py:4180} INFO - Setting next_dagrun for my_first_dag_1 to 2025-02-01 00:00:00+00:00, run_after=2025-02-02 00:00:00+00:00
+[2025-02-25T16:22:24.471+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/my_first_dags.py took 0.104 seconds
+[2025-02-25T16:22:55.153+0000] {processor.py:186} INFO - Started process (PID=883) to work on /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:22:55.154+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/my_first_dags.py for tasks to queue
+[2025-02-25T16:22:55.156+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:22:55.156+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:22:55.177+0000] {processor.py:925} INFO - DAG(s) 'my_first_dag_1' retrieved from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:22:55.202+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:22:55.201+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T16:22:55.225+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:22:55.225+0000] {dag.py:4180} INFO - Setting next_dagrun for my_first_dag_1 to 2025-02-01 00:00:00+00:00, run_after=2025-02-02 00:00:00+00:00
+[2025-02-25T16:22:55.258+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/my_first_dags.py took 0.112 seconds
+[2025-02-25T16:23:25.893+0000] {processor.py:186} INFO - Started process (PID=908) to work on /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:23:25.894+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/my_first_dags.py for tasks to queue
+[2025-02-25T16:23:25.896+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:23:25.896+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:23:25.925+0000] {processor.py:925} INFO - DAG(s) 'my_first_dag_1' retrieved from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:23:25.949+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:23:25.949+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T16:23:25.971+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:23:25.971+0000] {dag.py:4180} INFO - Setting next_dagrun for my_first_dag_1 to 2025-02-01 00:00:00+00:00, run_after=2025-02-02 00:00:00+00:00
+[2025-02-25T16:23:25.991+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/my_first_dags.py took 0.103 seconds
+[2025-02-25T16:23:56.668+0000] {processor.py:186} INFO - Started process (PID=937) to work on /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:23:56.669+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/my_first_dags.py for tasks to queue
+[2025-02-25T16:23:56.671+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:23:56.671+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:23:56.691+0000] {processor.py:925} INFO - DAG(s) 'my_first_dag_1' retrieved from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:23:56.715+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:23:56.715+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T16:23:56.735+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:23:56.735+0000] {dag.py:4180} INFO - Setting next_dagrun for my_first_dag_1 to 2025-02-01 00:00:00+00:00, run_after=2025-02-02 00:00:00+00:00
+[2025-02-25T16:23:56.765+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/my_first_dags.py took 0.102 seconds
+[2025-02-25T16:24:27.399+0000] {processor.py:186} INFO - Started process (PID=964) to work on /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:24:27.400+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/my_first_dags.py for tasks to queue
+[2025-02-25T16:24:27.403+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:24:27.403+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:24:27.431+0000] {processor.py:925} INFO - DAG(s) 'my_first_dag_1' retrieved from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:24:27.456+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:24:27.455+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T16:24:27.478+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:24:27.477+0000] {dag.py:4180} INFO - Setting next_dagrun for my_first_dag_1 to 2025-02-01 00:00:00+00:00, run_after=2025-02-02 00:00:00+00:00
+[2025-02-25T16:24:27.499+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/my_first_dags.py took 0.106 seconds
+[2025-02-25T16:24:57.642+0000] {processor.py:186} INFO - Started process (PID=991) to work on /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:24:57.643+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/my_first_dags.py for tasks to queue
+[2025-02-25T16:24:57.645+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:24:57.645+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:24:57.665+0000] {processor.py:925} INFO - DAG(s) 'my_first_dag_1' retrieved from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:24:57.690+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:24:57.690+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T16:24:57.710+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:24:57.710+0000] {dag.py:4180} INFO - Setting next_dagrun for my_first_dag_1 to 2025-02-01 00:00:00+00:00, run_after=2025-02-02 00:00:00+00:00
+[2025-02-25T16:24:57.733+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/my_first_dags.py took 0.096 seconds
+[2025-02-25T16:25:27.940+0000] {processor.py:186} INFO - Started process (PID=1018) to work on /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:25:27.941+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/my_first_dags.py for tasks to queue
+[2025-02-25T16:25:27.943+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:25:27.942+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:25:27.960+0000] {processor.py:925} INFO - DAG(s) 'my_first_dag_1' retrieved from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:25:27.985+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:25:27.985+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T16:25:28.007+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:25:28.006+0000] {dag.py:4180} INFO - Setting next_dagrun for my_first_dag_1 to 2025-02-01 00:00:00+00:00, run_after=2025-02-02 00:00:00+00:00
+[2025-02-25T16:25:28.035+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/my_first_dags.py took 0.100 seconds
+[2025-02-25T16:25:58.149+0000] {processor.py:186} INFO - Started process (PID=1045) to work on /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:25:58.151+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/my_first_dags.py for tasks to queue
+[2025-02-25T16:25:58.154+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:25:58.154+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:25:58.204+0000] {processor.py:925} INFO - DAG(s) 'my_first_dag_1' retrieved from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:25:58.235+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:25:58.234+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T16:25:58.255+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:25:58.254+0000] {dag.py:4180} INFO - Setting next_dagrun for my_first_dag_1 to 2025-02-01 00:00:00+00:00, run_after=2025-02-02 00:00:00+00:00
+[2025-02-25T16:25:58.285+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/my_first_dags.py took 0.143 seconds
+[2025-02-25T16:26:28.324+0000] {processor.py:186} INFO - Started process (PID=1072) to work on /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:26:28.325+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/my_first_dags.py for tasks to queue
+[2025-02-25T16:26:28.327+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:26:28.327+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:26:28.343+0000] {processor.py:925} INFO - DAG(s) 'my_first_dag_1' retrieved from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:26:28.365+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:26:28.365+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T16:26:28.385+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:26:28.384+0000] {dag.py:4180} INFO - Setting next_dagrun for my_first_dag_1 to 2025-02-01 00:00:00+00:00, run_after=2025-02-02 00:00:00+00:00
+[2025-02-25T16:26:28.412+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/my_first_dags.py took 0.093 seconds
+[2025-02-25T16:26:58.536+0000] {processor.py:186} INFO - Started process (PID=1099) to work on /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:26:58.538+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/my_first_dags.py for tasks to queue
+[2025-02-25T16:26:58.540+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:26:58.539+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:26:58.588+0000] {processor.py:925} INFO - DAG(s) 'my_first_dag_1' retrieved from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:26:58.619+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:26:58.619+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T16:26:58.640+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:26:58.640+0000] {dag.py:4180} INFO - Setting next_dagrun for my_first_dag_1 to 2025-02-01 00:00:00+00:00, run_after=2025-02-02 00:00:00+00:00
+[2025-02-25T16:26:58.660+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/my_first_dags.py took 0.131 seconds
+[2025-02-25T16:27:29.352+0000] {processor.py:186} INFO - Started process (PID=1126) to work on /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:27:29.353+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/my_first_dags.py for tasks to queue
+[2025-02-25T16:27:29.355+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:27:29.355+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:27:29.382+0000] {processor.py:925} INFO - DAG(s) 'my_first_dag_1' retrieved from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:27:29.417+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:27:29.417+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T16:27:29.446+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:27:29.446+0000] {dag.py:4180} INFO - Setting next_dagrun for my_first_dag_1 to 2025-02-01 00:00:00+00:00, run_after=2025-02-02 00:00:00+00:00
+[2025-02-25T16:27:29.479+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/my_first_dags.py took 0.132 seconds
+[2025-02-25T16:28:00.155+0000] {processor.py:186} INFO - Started process (PID=1153) to work on /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:28:00.157+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/my_first_dags.py for tasks to queue
+[2025-02-25T16:28:00.160+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:28:00.160+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:28:00.214+0000] {processor.py:925} INFO - DAG(s) 'my_first_dag_1' retrieved from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:28:00.240+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:28:00.239+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T16:28:00.260+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:28:00.259+0000] {dag.py:4180} INFO - Setting next_dagrun for my_first_dag_1 to 2025-02-01 00:00:00+00:00, run_after=2025-02-02 00:00:00+00:00
+[2025-02-25T16:28:00.292+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/my_first_dags.py took 0.145 seconds
+[2025-02-25T16:28:30.911+0000] {processor.py:186} INFO - Started process (PID=1180) to work on /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:28:30.912+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/my_first_dags.py for tasks to queue
+[2025-02-25T16:28:30.915+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:28:30.914+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:28:30.956+0000] {processor.py:925} INFO - DAG(s) 'my_first_dag_1' retrieved from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:28:30.988+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:28:30.988+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T16:28:31.019+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:28:31.019+0000] {dag.py:4180} INFO - Setting next_dagrun for my_first_dag_1 to 2025-02-01 00:00:00+00:00, run_after=2025-02-02 00:00:00+00:00
+[2025-02-25T16:28:31.046+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/my_first_dags.py took 0.140 seconds
+[2025-02-25T16:29:01.163+0000] {processor.py:186} INFO - Started process (PID=1207) to work on /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:29:01.165+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/my_first_dags.py for tasks to queue
+[2025-02-25T16:29:01.167+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:29:01.167+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:29:01.218+0000] {processor.py:925} INFO - DAG(s) 'my_first_dag_1' retrieved from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:29:01.243+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:29:01.243+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T16:29:01.267+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:29:01.266+0000] {dag.py:4180} INFO - Setting next_dagrun for my_first_dag_1 to 2025-02-01 00:00:00+00:00, run_after=2025-02-02 00:00:00+00:00
+[2025-02-25T16:29:01.299+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/my_first_dags.py took 0.143 seconds
+[2025-02-25T16:29:31.346+0000] {processor.py:186} INFO - Started process (PID=1232) to work on /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:29:31.347+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/my_first_dags.py for tasks to queue
+[2025-02-25T16:29:31.350+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:29:31.350+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:29:31.367+0000] {processor.py:925} INFO - DAG(s) 'my_first_dag_1' retrieved from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:29:31.390+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:29:31.390+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T16:29:31.409+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:29:31.409+0000] {dag.py:4180} INFO - Setting next_dagrun for my_first_dag_1 to 2025-02-01 00:00:00+00:00, run_after=2025-02-02 00:00:00+00:00
+[2025-02-25T16:29:31.435+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/my_first_dags.py took 0.094 seconds
+[2025-02-25T16:30:01.581+0000] {processor.py:186} INFO - Started process (PID=1258) to work on /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:30:01.582+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/my_first_dags.py for tasks to queue
+[2025-02-25T16:30:01.584+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:30:01.584+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:30:01.602+0000] {processor.py:925} INFO - DAG(s) 'my_first_dag_1' retrieved from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:30:01.626+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:30:01.626+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T16:30:01.646+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:30:01.645+0000] {dag.py:4180} INFO - Setting next_dagrun for my_first_dag_1 to 2025-02-01 00:00:00+00:00, run_after=2025-02-02 00:00:00+00:00
+[2025-02-25T16:30:01.671+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/my_first_dags.py took 0.096 seconds
+[2025-02-25T16:42:54.224+0000] {processor.py:186} INFO - Started process (PID=1287) to work on /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:42:54.226+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/my_first_dags.py for tasks to queue
+[2025-02-25T16:42:54.229+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:42:54.228+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:42:54.279+0000] {processor.py:925} INFO - DAG(s) 'my_first_dag_1' retrieved from /opt/airflow/dags/my_first_dags.py
+[2025-02-25T16:42:54.305+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:42:54.305+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-25T16:42:54.325+0000] {logging_mixin.py:190} INFO - [2025-02-25T16:42:54.325+0000] {dag.py:4180} INFO - Setting next_dagrun for my_first_dag_1 to 2025-02-01 00:00:00+00:00, run_after=2025-02-02 00:00:00+00:00
+[2025-02-25T16:42:54.356+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/my_first_dags.py took 0.141 seconds

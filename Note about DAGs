@@ -1,0 +1,18 @@
+Schedule with Cron Expression
+schedule_interval có thể dùng dạng datetime.timedelta hoặc Cron Expression
+Cron Expression: là một chuỗi gồm 5 trươờng được phân tách bằng một khoảng trắng,
+                 biểu diễn một tập hợp thời gian. Thường là lịch trình thực hiện một số thói quen.
+'min hour day(month) month day(week)'
+VD: '15 14 1 * *'
+
+default
+
+'None'
+'@once'
+'@hourly' : '0 * * * *'
+'@daily' : '0 0 * * *'
+'@weekly' : '0 0 * * 0'
+'@monthly' : '0 0 1 * *'
+'@yearly' : '0 0 1 1 *'
+
+tip: có thể vào crontab.guru để set_up cron dễ hơn

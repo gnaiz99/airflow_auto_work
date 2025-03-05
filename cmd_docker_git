@@ -1,0 +1,37 @@
+cmd cơ bản trong python
+Chuyển đường dẫn 
+cd C:\Users\giang.nt\Giang\airflow_
+cd file_path
+Chạy file .py
+python ./file_name.py
+
+chạy dockercompose file yaml
+docker compose up airflow-init
+docker compose up -d (chạy ngầm)
+
+tắt kết nối - xóa container
+docker compose down -v
+
+GitHub
+Tạo một repo trong máy
+git init
+
+xem trạng thái các file trong đường dẫn
+git status
+- file trong đường dẫn không track đc, muốn add file vào repo
+	git add file_name.
+	git add . - add toàn bộ file trong đường dẫn vào repo
+
+Commit - log hành động lưu thay đổi
+git commit -m "message"
+- Kiểm tra: git log
+
+Đồng bộ repo trên máy và repo trên web
+Gắn một tag origin vào url
+git remote add origin <url>
+- nếu tag có tồn tại, có thể xóa tag origin: git remote remove origin
+- nếu muốn sửa tag: git remote set-url origin <new-URL> 
+
+Push 
+git push origin master
+

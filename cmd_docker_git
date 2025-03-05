@@ -35,3 +35,12 @@ git remote add origin <url>
 Push 
 git push origin master
 
+Pull
+- clone repo nếu chưa có repo trên máy
+git clone https://github.com/user/repository.git
+
+- nếu đã có repo trên máy
+git pull
+git pull origin main  # Hoặc git pull origin master nếu repo dùng branch master
+
+

@@ -43,6 +43,8 @@ git clone https://github.com/user/repository.git
 git pull
 git pull origin main  # Hoặc git pull origin master nếu repo dùng branch master
 
+
+-- Note about gitignore --
 - Note về gitignore
 chuyển file vào gitignore
 echo "file_name" >> .gitignore
@@ -55,3 +57,5 @@ git add .gitignore
 
 xem các file trong gitignore
 cat .gitignore
+
+đây là lần sửa cuối.

@@ -57,5 +57,3 @@ git add .gitignore
 
 xem các file trong gitignore
 cat .gitignore
-
-đây là lần sửa cuối.

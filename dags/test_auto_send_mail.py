@@ -8,6 +8,7 @@ import pandas as pd
 
 # Google Sheets API credentials
 GOOGLE_SHEET_URL = "https://docs.google.com/spreadsheets/d/19AtCkKfcXNQp8d1hjPEK6wfGZhJv6cKxLI6YzP7cyQc/edit?gid=0"
+# Xem lại phần này, tạo credencial file api rất phức tạp
 GOOGLE_CREDENTIALS_FILE = "/path/to/your/credentials.json"
 
 # Email settings

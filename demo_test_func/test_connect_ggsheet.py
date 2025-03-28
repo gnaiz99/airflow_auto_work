@@ -7,7 +7,8 @@ from email.mime.multipart import MIMEMultipart
 
 #1. Kết nối API - đọc file ggsheet
 # Đọc file API kết nối ggsheet
-gs = gspread.service_account(r'C:\Users\Admin\Downloads\test-connect-ggsheet-454216-7e9f4c02bdda.json')
+# gs = gspread.service_account(r'C:\Users\Admin\Downloads\test-connect-ggsheet-454216-7e9f4c02bdda.json') #Địa chỉ file test-connect-ggsheet trong máy local
+gs = gspread.service_account(r"C:\Users\giang.nt\Downloads\file hoàn thành\Py\test-connect-ggsheet-454216-7e9f4c02bdda.json") #Địa chỉ file trong máy cty
 #Kết nối bằng key trong url
 list_mail = gs.open_by_key('19AtCkKfcXNQp8d1hjPEK6wfGZhJv6cKxLI6YzP7cyQc').sheet1 #Lấy sheet đầu tiên
 list_mail = list_mail.get_all_records()

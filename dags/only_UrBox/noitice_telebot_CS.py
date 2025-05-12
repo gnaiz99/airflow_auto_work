@@ -8,7 +8,8 @@ from airflow_clickhouse_plugin.hooks.clickhouse_dbapi import ClickHouseDbApiHook
 
 from plugins.helpers.telegram_bot import task_fail_telegram_alert
 
-a4_db = Variable.get("a4-db")
+# a4_db = Variable.get("a4-db")
+chatbot = Variable.get("chatbot")
 a4_list_contract_ids = Variable.get("a4_list_contract_ids", deserialize_json=True)
 a4_email_html_content = Variable.get("a4_email_html_content")
 
@@ -19,8 +20,8 @@ def send_email(
     contract: str,
     file_names: list[str],
 ) -> None:
-    receivers = ["ketoantoqua@urbox.vn"]
-    message_subject = f"Data đối soát - {contract} Đối soát dữ liệu kỳ đối soát từ ngày {date_from} đến ngày {date_to}"
+    receivers = ["cskh@urbox.vn"]
+    message_subject = f"Cảnh Báo Tổng Hợp: Hoạt Động Truy Cập Bot Hệ Thống Của Các Agent ngày {date_from} đến ngày {date_to}"
     with SmtpHook(smtp_conn_id="smtp_conn") as smtp_hook:
         return smtp_hook.send_email_smtp(
             to=receivers,
@@ -32,18 +33,18 @@ def send_email(
 
 
 @dag(
-    schedule_interval="30 6 * * *",
-    start_date=datetime(2023, 1, 24),
+    schedule_interval="30 10 * * *",
+    start_date=datetime(2025, 5, 10),
     max_active_runs=1,
     catchup=False,
     default_args={"owner": "Data-warehouse"},
-    on_failure_callback=task_fail_telegram_alert,
-    tags=["a4", "urcontract", "reconciliation"],
+    on_failure_callback=task_fail_telegram_alert
+    # ,tags=["a4", "urcontract", "reconciliation"],
 )
 def a4_send_data():
     @task()
     def get_dict_send_email(execution_date=None):
-        hook = MySqlHook(mysql_conn_id="mysql_config", schema=a4_db)
+        hook = MySqlHook(mysql_conn_id="mysql_config", schema=chatbot)
         query_get_list_reconciliation_schedule = f"""
             SELECT rs.id as reconciliation_schedule_id,
                 rs.contract_id as contract_id,

@@ -26,6 +26,13 @@ Commit - log hành động lưu thay đổi
 git commit -m "message"
 - Kiểm tra: git log
 
+Kiểm tra thông tin
+# xem project từ git nào
+git remote -v
+# xem project đang ở nhánh nào
+git branch
+
+
 Đồng bộ repo trên máy và repo trên web
 Gắn một tag origin vào url
 git remote add origin <url>

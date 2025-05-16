@@ -3,16 +3,6 @@ networks:
     airflow:
 
 services:
-    # clickhouse:
-    #     image: clickhouse/clickhouse-server:23.3.22.3-alpine
-    #     container_name: clickhouse
-    #     hostname: clickhouse
-    #     volumes:
-    #         - ${PWD}/fs/volumes/clickhouse/etc/clickhouse-server/config.d/config.xml:/etc/clickhouse-server/config.d/config.xml
-    #         - ${PWD}/fs/volumes/clickhouse/etc/clickhouse-server/users.d/users.xml:/etc/clickhouse-server/users.d/users.xml
-    #     ports:
-    #         - 8123:8123
-    #         - 9000:9000
     postgres:
         image: postgres:14-alpine
         environment:
@@ -55,6 +45,7 @@ services:
             - ./logs:/opt/airflow/logs
             - ./plugins:/opt/airflow/plugins
             - /var/run/docker.sock:/var/run/docker.sock
+            - ./config/airflow.cfg:/usr/local/airflow/airflow.cfg
         deploy:
             restart_policy:
                 condition: on-failure
@@ -102,6 +93,7 @@ services:
             - ./logs:/opt/airflow/logs
             - ./plugins:/opt/airflow/plugins
             - /var/run/docker.sock:/var/run/docker.sock
+            - ./config/airflow.cfg:/usr/local/airflow/airflow.cfg
         command: scheduler
         depends_on:
             - initdb
@@ -124,7 +116,8 @@ services:
             - ./logs:/opt/airflow/logs
             - ./plugins:/opt/airflow/plugins
             - /var/run/docker.sock:/var/run/docker.sock
-        command: celery worker -q default,acb_queue,heavy_queue
+            - ./config/airflow.cfg:/usr/local/airflow/airflow.cfg
+        command: celery worker -q default
         depends_on:
             - scheduler
         deploy:
@@ -144,6 +137,7 @@ services:
             - ./logs:/opt/airflow/logs
             - ./plugins:/opt/airflow/plugins
             - /var/run/docker.sock:/var/run/docker.sock
+            - ./config/airflow.cfg:/usr/local/airflow/airflow.cfg
         entrypoint: /bin/bash
         deploy:
             restart_policy:

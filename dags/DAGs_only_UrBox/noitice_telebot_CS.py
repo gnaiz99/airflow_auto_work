@@ -25,22 +25,23 @@ def send_telegram_message(message: str):
     # )
     # telegram_hook.send_message(api_params={"text": message})
 
-    hook = TelegramHook(
+    telegram_hook = TelegramHook(
         telegram_token=TELEGRAM_TOKEN,
         chat_id=TELEGRAM_CHAT_ID
     )
-    hook.send_message(api_params={"text": message})
+    telegram_hook.send_message(api_params={"text": message})
 
 
 # ==== Hàm xử lý chính ====
-def get_data_and_send(**kwargs):
+def get_data_and_send(**context):
 
     # current_date = datetime.now() # sai
     # previous_date = current_date - timedelta(days=1) # sai
     # cái này sai trong trường hợp nếu task ông chạy lỗi mà phải chạy lại thì chỗ này sẽ bị thay đổi
     # cần phải cố định thời điểm này = context['data_interval_end'] và context['data_interval_start']
-    previous_date = kwargs['data_interval_start']
-
+    # previous_date = kwargs['data_interval_start']
+    current_date = context['data_interval_start']
+    previous_date = context['data_interval_end']
 
     pivot_data = f"""SELECT u.email as email_agent,
        			count(*) as so_luot_hoi_bot 
@@ -50,7 +51,7 @@ def get_data_and_send(**kwargs):
        where 1=1
        and match(LOWER(m.content) , 'lg|urcard|urgift')
        AND m.role = 'user'
-       and toDate(m.created_at) between '{previous_date.date()}' and '{previous_date.date() + timedelta(days=1)}'
+       and toDate(m.created_at) between '{previous_date.date()}' and '{current_date.date()}'
        group by u.email 
        order by count(*) desc
        """
@@ -62,19 +63,19 @@ def get_data_and_send(**kwargs):
        where 1=1
        and match(LOWER(m.content) , 'lg|urcard|urgift')
        AND m.role = 'user'
-       and toDate(m.created_at) between '{previous_date.date()}' and '{previous_date.date() + timedelta(days=1)}'
+       and toDate(m.created_at) between '{previous_date.date()}' and '{current_date.date()}'
        """
 
     # Lưu ý: Object taọ lại 2 lần là phí tài nguyên
-    hook = ClickHouseDbApiHook(
+    clickhouse_hook = ClickHouseDbApiHook(
         clickhouse_conn_id="clickhouse_conn_da", schema="chatbot"
     )
-    list_agent_ask_bot = hook.get_pandas_df(sql=pivot_data)
-    number_ask_bot = hook.get_pandas_df(sql=count_ask)
+    list_agent_ask_bot = clickhouse_hook.get_pandas_df(sql=pivot_data)
+    number_ask_bot = clickhouse_hook.get_pandas_df(sql=count_ask)
 
     html_table = list_agent_ask_bot.to_html(index=False)
     message = f"""<b>Dear team CSKH,</b>
-                \nData gửi thông tin số lượng check bot ngày {previous_date}: <b>{number_ask_bot}</b>
+                \nData gửi thông tin số lượng check bot ngày {previous_date.date()}: <b>{number_ask_bot}</b>
                 \n<b>{html_table} </b>"""
     send_telegram_message(message)
 
@@ -83,7 +84,7 @@ with DAG(
     dag_id='clickhouse_to_telegram_report',
     default_args=default_args,
     start_date=datetime(2025, 5, 15),
-    schedule_interval='5 23 * * *',  # Mỗi ngày lúc 10h30 sáng
+    schedule_interval='20 11 * * *',  # Mỗi ngày lúc 10h30 sáng
     catchup=True,
     tags=['report', 'telegram', 'clickhouse']
 ) as dag:

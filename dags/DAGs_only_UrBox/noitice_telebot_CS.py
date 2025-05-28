@@ -6,9 +6,8 @@ import requests
 from airflow.providers.telegram.hooks.telegram import TelegramHook
 from sqlalchemy.sql.functions import current_date
 
-TELEGRAM_TOKEN = '8021130212:AAHx7u70ptnb4VpZjDrsMu5i-yYY-dlBzyA' # tuyệt đối ko ghi thông tin credential lên code
-
-TELEGRAM_CHAT_ID = '-4841407782'
+# TELEGRAM_TOKEN = '8021130212:AAHx7u70ptnb4VpZjDrsMu5i-yYY-dlBzyA' # tuyệt đối ko ghi thông tin credential lên code
+# TELEGRAM_CHAT_ID = '-1004841407782'
 
 default_args = {
     "retries": 3,
@@ -84,7 +83,7 @@ with DAG(
     dag_id='clickhouse_to_telegram_report',
     default_args=default_args,
     start_date=datetime(2025, 5, 15),
-    schedule_interval='20 11 * * *',  # Mỗi ngày lúc 10h30 sáng
+    schedule_interval='30 10 * * *',  # Mỗi ngày lúc 10h30 sáng
     catchup=True,
     tags=['report', 'telegram', 'clickhouse']
 ) as dag:

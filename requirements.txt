@@ -64,3 +64,4 @@ clickhouse-connect>=0.8.9
 hubspot-api-client==8.2.1
 msoffcrypto-tool==5.4.2
 pyOpenSSL==23.0.0
+apache-airflow-providers-telegram

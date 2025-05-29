@@ -7,7 +7,7 @@ from airflow.providers.telegram.hooks.telegram import TelegramHook
 from sqlalchemy.sql.functions import current_date
 
 # TELEGRAM_TOKEN = '8021130212:AAHx7u70ptnb4VpZjDrsMu5i-yYY-dlBzyA' # tuyệt đối ko ghi thông tin credential lên code
-# TELEGRAM_CHAT_ID = '-1004841407782'
+TELEGRAM_CHAT_ID = '-1004841407782'
 
 default_args = {
     "retries": 3,
@@ -17,30 +17,26 @@ default_args = {
 
 # ==== Hàm gửi telegram ====
 def send_telegram_message(message: str):
-    # telegram_conn_id = "telegram_conn_id"
-    # telegram_hook = (
-    #         telegram_conn_id = telegram_conn_id,
-    #         chat_id=TELEGRAM_CHAT_ID,
-    # )
+    telegram_conn_id = "telegram_conn_id"
+    telegram_hook = TelegramHook(
+            telegram_conn_id = telegram_conn_id,
+            chat_id = TELEGRAM_CHAT_ID,
+    )
+    telegram_hook.send_message(text= message)
     # telegram_hook.send_message(api_params={"text": message})
 
-    telegram_hook = TelegramHook(
-        telegram_token=TELEGRAM_TOKEN,
-        chat_id=TELEGRAM_CHAT_ID
-    )
-    telegram_hook.send_message(api_params={"text": message})
 
 
 # ==== Hàm xử lý chính ====
-def get_data_and_send(**context):
+def get_data_and_send(**kwargs):
 
     # current_date = datetime.now() # sai
     # previous_date = current_date - timedelta(days=1) # sai
     # cái này sai trong trường hợp nếu task ông chạy lỗi mà phải chạy lại thì chỗ này sẽ bị thay đổi
     # cần phải cố định thời điểm này = context['data_interval_end'] và context['data_interval_start']
     # previous_date = kwargs['data_interval_start']
-    current_date = context['data_interval_start']
-    previous_date = context['data_interval_end']
+    current_date = kwargs['data_interval_start']
+    previous_date = kwargs['data_interval_end']
 
     pivot_data = f"""SELECT u.email as email_agent,
        			count(*) as so_luot_hoi_bot 

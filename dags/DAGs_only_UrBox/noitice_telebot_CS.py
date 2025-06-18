@@ -7,7 +7,7 @@ from airflow.providers.telegram.hooks.telegram import TelegramHook
 from sqlalchemy.sql.functions import current_date
 
 # TELEGRAM_TOKEN = '8021130212:AAHx7u70ptnb4VpZjDrsMu5i-yYY-dlBzyA' # tuyệt đối ko ghi thông tin credential lên code
-TELEGRAM_CHAT_ID = '-1004841407782'
+TELEGRAM_CHAT_ID = -1004841407782
 
 default_args = {
     "retries": 3,
@@ -19,11 +19,11 @@ default_args = {
 def send_telegram_message(message: str):
     telegram_conn_id = "telegram_conn_id"
     telegram_hook = TelegramHook(
-            telegram_conn_id = telegram_conn_id,
-            chat_id = TELEGRAM_CHAT_ID,
+            telegram_conn_id = telegram_conn_id
     )
-    telegram_hook.send_message(text= message)
-    # telegram_hook.send_message(api_params={"text": message})
+    telegram_hook.send_message(api_params={ "chat_id": TELEGRAM_CHAT_ID,
+                                            "text": message,
+                                           "parse_mode": "HTML"})
 
 
 
@@ -46,19 +46,19 @@ def get_data_and_send(**kwargs):
        where 1=1
        and match(LOWER(m.content) , 'lg|urcard|urgift')
        AND m.role = 'user'
-       and toDate(m.created_at) between '{previous_date.date()}' and '{current_date.date()}'
+       and toDate(m.created_at) between '{current_date.date()}'  and  '{previous_date.date()}'
        group by u.email 
        order by count(*) desc
        """
 
-    count_ask = f"""count(*) as so_luot_hoi_bot 
+    count_ask = f"""select count(*) as so_luot_hoi_bot 
        FROM chatbot.message m 
        left join chatbot.conversations c on m.conversation_id = c.id 
        left join chatbot.users u on c.user_id = u.id 
        where 1=1
        and match(LOWER(m.content) , 'lg|urcard|urgift')
        AND m.role = 'user'
-       and toDate(m.created_at) between '{previous_date.date()}' and '{current_date.date()}'
+       and toDate(m.created_at) between '{current_date.date()}'  and  '{previous_date.date()}'
        """
 
     # Lưu ý: Object taọ lại 2 lần là phí tài nguyên
@@ -67,11 +67,14 @@ def get_data_and_send(**kwargs):
     )
     list_agent_ask_bot = clickhouse_hook.get_pandas_df(sql=pivot_data)
     number_ask_bot = clickhouse_hook.get_pandas_df(sql=count_ask)
+    number = number_ask_bot.iloc[0]['so_luot_hoi_bot']
 
-    html_table = list_agent_ask_bot.to_html(index=False)
+    # html_table = list_agent_ask_bot.to_html(index=False)
+    table_text = list_agent_ask_bot.to_string(index=False)
+
     message = f"""<b>Dear team CSKH,</b>
-                \nData gửi thông tin số lượng check bot ngày {previous_date.date()}: <b>{number_ask_bot}</b>
-                \n<b>{html_table} </b>"""
+                \nData gửi thông tin số lượng check bot ngày {previous_date.date()}: <b>{number}</b>
+                \n<pre>{table_text}</pre>"""
     send_telegram_message(message)
 
 # ==== DAG ====

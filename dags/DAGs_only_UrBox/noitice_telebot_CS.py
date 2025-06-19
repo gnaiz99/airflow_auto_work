@@ -7,8 +7,10 @@ from airflow.providers.telegram.hooks.telegram import TelegramHook
 from sqlalchemy.sql.functions import current_date
 
 # TELEGRAM_TOKEN = '8021130212:AAHx7u70ptnb4VpZjDrsMu5i-yYY-dlBzyA' # tuyệt đối ko ghi thông tin credential lên code
-TELEGRAM_CHAT_ID = -1004841407782
-
+TELEGRAM_CHAT_ID = '-1002592359099'
+# -1004841407782
+# Vào trang dưới đây để check chat_id
+# https://api.telegram.org/bot<tele_token>/getUpdates
 default_args = {
     "retries": 3,
     "retry_delay": timedelta(minutes=5),

@@ -5,6 +5,16 @@ cd file_path
 Chạy file .py
 python ./file_name.py
 
+tạo một push request
+B1 chuyển hướng đến repo pull
+B2 git checkout master -> chuyển về nhánh master
+B3 git checkout -b feature/name_branch -> tạo một nhánh mới
+B4 sửa file
+B5 git add .
+B6 git commit
+B7 git push origin feature/name_branch -> đẩy nhánh lên github
+B8 tạo pushrequest trên github
+
 chạy dockercompose file yaml
 docker compose up airflow-init
 docker compose up -d (chạy ngầm)
